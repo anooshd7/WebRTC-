@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>WebRTC Audio</title>
+    <style>
+        video {
+            width: 320px;
+            height: 240px;
+        }
+        body {
+            text-align: center;
+        }
+        #mute {
+            width: auto;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebRTC Audio</h1>
+
+    <div id="Home">
+        <button id="start">Start Call</button>
+    </div>
+
+    <div id="CallRoom" style="display:none">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+        <br/>
+        <span id="mute" style="display:none">Toggle Audio</span>
+        <h2>Audio Events</h2>
+        <div id="audioEvents"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
