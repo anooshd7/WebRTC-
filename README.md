@@ -9,3 +9,8 @@ npm install
 npm start
 
 Go to the URL at http://localhost:3000
+
+# WebRTC Security References
+- https://dzone.com/articles/webrtc-security-vulnerabilities-you-should-know-ab
+- https://webrtc-security.github.io/
+
